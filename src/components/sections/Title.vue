@@ -1,22 +1,22 @@
 <script lang="ts" setup>
 
 import { ElIcon } from 'element-plus'
-import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
+import { Notebook } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = 'resources/logo_full.png'
 
-// 标题
-const title = 'Academic Project Page Template'
+// 标题（logo_full 已含品牌字样，H1 只放副标题，避免重复）
+const title = ''
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = 'Online Auditing for Early Failure Prediction in Multi-Agent Systems'
 
 // 标题补充颜色
-const title_supp_color = '#42B883'
+const title_supp_color = '#000000'
 
 // 按钮颜色
 const btn_color = '#444444'
@@ -24,22 +24,17 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
-    icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
-    address_flag: "1,#"
-  },
-  {
-    name: "Anya Forger",
-    icon: "./icon/anya.jpg",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
-  },
-  {
-    name: "BugCat Capoo",
-    icon: "./icon/capoo.webp",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
+    name: "Hezhe Qiao",
+    icon: "",
+    homepage: "https://hezheqiao.2022.github.io/",
     address_flag: "1,*"
+  },
+
+  {
+    name: "Guansong Pang",
+    icon: "",
+    homepage: "https://https://sites.google.com/site/gspangsite/home/",
+    address_flag: "1,†"
   },
 ]
 
@@ -47,78 +42,59 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
-    icon: "./icon/home.png",
-    homepage: "https://github.com/hmuniversity"
+    name: "Rutgers University",
+    icon: "resources/ru_logo.png",
+    homepage: "https://www.rutgers.edu/"
   },
   {
     address_flag: "2",
-    name: "IKUN University",
-    icon: "./icon/ikun.avif",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+    name: "The University of Texas at Austin",
+    icon: "resources/ut_logo.png",
+    homepage: "https://www.utexas.edu/"
+  },
+  {
+    address_flag: "3",
+    name: "Purdue University",
+    icon: "resources/purdue_logo.png",
+    homepage: "https://www.purdue.edu/"
   },
 ]
 
 // 共一和通讯提示
-const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+const con_and_corresponding_author =
+  "*: Equal Contribution.  †: Corresponding Author."
 
 // 最新消息
-const news = "🔥 [2024-12-15] This template project is still under development."
+const news = ""
 
 // 强调内容
-const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
-]
+const emphases = []
 
 // 提供引导资料链接
 const buttons = [
   {
-    disabled: true,
+    disabled: false,
     name: "Paper",
-    component: Document,
-  },
-  {
-    disabled: true,
-    name: "中译版",
-    component: Document,
+    link: "https://arxiv.org/abs/2605.08715",
+    iconImg: "resources/arxiv_logo.svg",
   },
   {
     disabled: false,
     name: "Code",
-    link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
-    component: Files,
+    link: "https://github.com/ZBox1005/AgentForesight",
+    iconImg: "resources/github_logo.svg",
   },
   {
     disabled: false,
-    name: "Demo",
-    link: "https://junyaohu.github.io/academic-project-page-template-vue",
-    component: MagicStick,
-  },
-  {
-    disabled: true,
-    name: "Poster",
-    component: Picture,
-  },
-  {
-    disabled: true,
-    name: "Slide",
-    component: DataAnalysis,
+    name: "Dataset",
+    link: "https://huggingface.co/datasets/ZBox008003/AFTraj",
+    iconImg: "resources/huggingface_logo.png",
   },
   {
     disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-    component: Film,
-  },
-  {
-    disabled: false,
-    name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
-    component: Film,
+    name: "BibTeX",
+    link: "#bibtex",
+    component: Notebook,
   },
 ]
 
@@ -128,15 +104,15 @@ const buttons = [
   <div>
 
     <!-- 最新消息提示 -->
-    <el-row justify="center">
+    <el-row v-if="news" justify="center">
       <el-col :span="24">
-        <el-alert title="🔥 This template is still under development." type="success" />
+        <el-alert :title="news" type="success" />
       </el-col>
     </el-row>
 
     <!-- 文章logo -->
     <el-row v-if="logo" justify="center">
-      <el-image :src="logo" class="logo" fit="cover" />
+      <el-image :src="logo" class="logo" fit="contain" />
     </el-row>
 
     <!-- 文章标题 -->
@@ -151,7 +127,7 @@ const buttons = [
 
     <!-- 作者名单 -->
     <el-row justify="center">
-      <a :href=author.homepage v-for="author in authors">
+      <a v-for="author in authors" :key="author.name" :href="author.homepage">
         <el-button class="title-button" type="primary" text>
           <el-avatar v-if="author.icon" :size="40" :src="author.icon" />
           <span class="author">
@@ -163,9 +139,9 @@ const buttons = [
 
     <!-- 地址名单 -->
     <el-row justify="center">
-      <a :href=address.homepage v-for="address in addresses">
+      <a v-for="address in addresses" :key="address.address_flag" :href="address.homepage">
         <el-button class="title-button" type="primary" text>
-          <el-avatar v-if="address.icon" :size="40" :src="address.icon" />
+          <img v-if="address.icon" class="address-logo" :src="address.icon" :alt="address.name" />
           <span class="address">
             <sup v-if="address.address_flag" class="address_sup">{{ address.address_flag }}</sup>{{ address.name }}
           </span>
@@ -179,7 +155,7 @@ const buttons = [
     </el-row>
 
     <!-- 强调内容 -->
-    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
+    <el-row v-for="(emphasis, i) in emphases" :key="i" justify="center" class="emphasis">
         {{ emphasis }}
     </el-row>
 
@@ -187,10 +163,11 @@ const buttons = [
     <el-row justify="center" style="margin-bottom: 20px;">
       <el-col :span="20">
         <el-row justify="center">
-          <a :href=button.link v-for="button in buttons">
+          <a v-for="button in buttons" :key="button.name" :href="button.link">
             <el-button class="guidance-button" size="default" :color="btn_color" :disabled="button.disabled" round>
               <el-icon :size="18">
-                <component :is="button.component" />
+                <component v-if="button.component" :is="button.component" />
+                <img v-else-if="button.iconImg" :src="button.iconImg" :alt="button.name" class="btn-icon-img" />
               </el-icon>
               <span class="btn-text">{{ button.name }}</span>
             </el-button>
@@ -207,9 +184,10 @@ const buttons = [
 /* 文章标题字体、字间距、居中排布、字号 */
 .paper-title {
   font-family: "MyFont", Verdana, sans-serif;
-  letter-spacing: 2px;
-  font-size: 42px;
-  margin: 32px;
+  letter-spacing: 1px;
+  font-size: 38px;
+  line-height: 1.25;
+  margin: 8px 0 24px;
   text-align: center;
 }
 
@@ -237,7 +215,7 @@ const buttons = [
 
 /* 姓名上标属性 */
 .name_sup {
-  color: #606266; 
+  color: #606266;
   margin-left: 3px;
 }
 
@@ -248,7 +226,7 @@ const buttons = [
 
 /* 地址上标属性 */
 .address_sup {
-  color: #606266; 
+  color: #606266;
   margin-right: 1px;
 }
 
@@ -256,6 +234,17 @@ const buttons = [
 .el-avatar {
   margin-right: 6px;
   box-shadow: #b7b7b7 0px 0px 3px 1px;
+}
+
+/* 机构 logo：高度统一 36px，宽度跟随原比例上限 50px，
+   保证方形 logo 显示 36×36，宽 logo（如 Purdue）显示 50×27，视觉面积接近 */
+.address-logo {
+  height: 36px;
+  width: auto;
+  max-width: 50px;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 /* 共一和通讯文字属性 */
@@ -281,6 +270,13 @@ const buttons = [
   color: #ffffff;
 }
 
+/* 引导材料按钮图标（用图片替代 element 图标时） */
+.btn-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .el-alert {
   margin: 10px 0 0;
 }
@@ -290,10 +286,9 @@ const buttons = [
 }
 
 .logo {
-  width: 150px; 
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: #ced3dc 0px 0px 3px 2px;
+  width: 520px;
+  max-width: 90%;
+  height: auto;
   margin-top: 40px;
 }
 
