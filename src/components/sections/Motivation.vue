@@ -9,8 +9,8 @@ import FigureSection from './FigureSection.vue'
     alt=""
   >
     <template #caption>
-      <b>(a)</b>Our hypothesis verification-based approach VerifyMAS vs. two existing approaches. <br>
-      <b>(b)</b> Performance of three approaches on Aegis-Bench \cite{kong2025aegis} in attributing three categories of error types—global, local, and hybrid errors in average Pair-F1 <br>
+      <b>(a)</b> Our <b>hypothesis verification</b>-based approach VerifyMAS vs. two existing approaches. <br>
+      <b>(b)</b> Performance of three approaches on <b>Aegis-Bench</b>  in attributing three categories of error types—<b>global, local, and hybrid</b> errors in average Pair-F1 <br>
     </template>
   </FigureSection>
 </template>
