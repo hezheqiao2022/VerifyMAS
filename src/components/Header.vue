@@ -5,7 +5,7 @@ import { SuccessFilled } from '@element-plus/icons-vue'
 
 // 项目主页
 const logo = {
-    name: "VerifyMAS",
+    name: "VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems",
     link: "#",
 }
 

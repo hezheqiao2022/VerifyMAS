@@ -13,7 +13,7 @@ const title = ''
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = 'VerifyMAS'
+const title_supp = 'VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems'
 
 // 标题补充颜色
 const title_supp_color = '#000000'
