@@ -4,13 +4,13 @@ import FigureSection from './FigureSection.vue'
 
 <template>
   <FigureSection
-    title="Why Online Auditing?"
+    title="Why Hypothesis Verification?"
     src="resources/motivation.png"
-    alt="Comparison of post-hoc failure attribution and online auditing"
+    alt=""
   >
     <template #caption>
-      <b>(a)</b> Post-hoc attribution only diagnoses after the trajectory has already failed.<br>
-      <b>(b)</b> <b>AgentForesight</b> flags the decisive error step-by-step on the unfolding prefix, opening a deployment-time intervention window before the failure is locked in.
+      <b>(a)</b>Our hypothesis verification-based approach VerifyMAS vs. two existing approaches. <br>
+      <b>(b)</b> Performance of three approaches on Aegis-Bench \cite{kong2025aegis} in attributing three categories of error types—global, local, and hybrid errors in average Pair-F1 <br>
     </template>
   </FigureSection>
 </template>
