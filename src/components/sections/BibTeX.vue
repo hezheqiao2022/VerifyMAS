@@ -2,13 +2,8 @@
 export default {
   data() {
     return {
-      bibtex: [
-        "@article{junyaohu2023template,",
-        "    title={Academic Project Page Template Vue},",
-        "    author={Hu, Junyao},",
-        "    journal={GitHub},",
-        "    year={2023}",
-        "}",
+      bibtex: [1111
+
       ],
     }
   },
