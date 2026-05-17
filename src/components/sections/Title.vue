@@ -27,7 +27,7 @@ const authors = [
     name: "Hezhe Qiao",
     icon: "",
     homepage: "https://hezheqiao2022.github.io/",
-    address_flag: "1,*"
+    address_flag: "1"
   },
 
   {
@@ -51,7 +51,7 @@ const addresses = [
 
 // 共一和通讯提示
 const con_and_corresponding_author =
-  "*: Equal Contribution.  †: Corresponding Author."
+  "†: Corresponding Author."
 
 // 最新消息
 const news = ""
