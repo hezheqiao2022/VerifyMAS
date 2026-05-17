@@ -30,25 +30,11 @@ const authors = [
     address_flag: "1"
   },
       {
-    name: "Hezhe Qiao",
+    name: "Hanghang Tong",
     icon: "",
     homepage: "https://hezheqiao2022.github.io/",
     address_flag: "2"
   },
-
-      {
-    name: "Hezhe Qiao",
-    icon: "",
-    homepage: "https://hezheqiao2022.github.io/",
-    address_flag: "1"
-  },
-      {
-    name: "Hezhe Qiao",
-    icon: "",
-    homepage: "https://hezheqiao2022.github.io/",
-    address_flag: "3"
-  },
-
   {
     name: "Guansong Pang",
     icon: "",
