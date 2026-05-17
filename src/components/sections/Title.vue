@@ -13,7 +13,7 @@ const title = ''
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = 'Online Auditing for Early Failure Prediction in Multi-Agent Systems'
+const title_supp = 'VerifyMAS'
 
 // 标题补充颜色
 const title_supp_color = '#000000'
@@ -24,33 +24,16 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Boxuan Zhang",
+    name: "Hezhe Qiao",
     icon: "",
-    homepage: "https://zbox1005.github.io/",
+    homepage: "https://hezheqiao.2022.github.io/",
     address_flag: "1,*"
   },
+
   {
-    name: "Jianing Zhu",
+    name: "Guansong Pang",
     icon: "",
-    homepage: "https://zfancy.github.io/",
-    address_flag: "2,*"
-  },
-  {
-    name: "Zeru Shi",
-    icon: "",
-    homepage: "https://vanpe20.github.io/",
-    address_flag: "1"
-  },
-  {
-    name: "Dongfang Liu",
-    icon: "",
-    homepage: "https://dongfang-liu.github.io/",
-    address_flag: "3"
-  },
-  {
-    name: "Ruixiang Tang",
-    icon: "",
-    homepage: "https://www.ruixiangtang.net/",
+    homepage: "https://sites.google.com/site/gspangsite/home",
     address_flag: "1,†"
   },
 ]
@@ -59,22 +42,11 @@ const authors = [
 const addresses = [
   {
     address_flag: "1",
-    name: "Rutgers University",
+    name: "Singapore Management University",
     icon: "resources/ru_logo.png",
-    homepage: "https://www.rutgers.edu/"
+    homepage: ""
   },
-  {
-    address_flag: "2",
-    name: "The University of Texas at Austin",
-    icon: "resources/ut_logo.png",
-    homepage: "https://www.utexas.edu/"
-  },
-  {
-    address_flag: "3",
-    name: "Purdue University",
-    icon: "resources/purdue_logo.png",
-    homepage: "https://www.purdue.edu/"
-  },
+
 ]
 
 // 共一和通讯提示

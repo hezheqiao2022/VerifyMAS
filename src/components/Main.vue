@@ -27,7 +27,7 @@ import BibTeX from './sections/BibTeX.vue'
 export default {
   components: {
     Title,
-    Video,
+    // Video,
     Abstract,
     Motivation,
     Method,
@@ -41,7 +41,7 @@ export default {
 
 <template>
   <Title/>
-  <Video/>
+<!--  <Video/>-->
   <Abstract/>
   <Motivation/>
   <Method/>
