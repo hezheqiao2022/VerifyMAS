@@ -3,12 +3,13 @@ export default {
   data() {
     return {
       bibtex: [
-        "@article{zhang2026agentforesight,",
-        "  title={AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems},",
-        "  author={Zhang, Boxuan and Zhu, Jianing and Shi, Zeru and Liu, Dongfang and Tang, Ruixiang},",
-        "  journal={arXiv preprint arXiv:2605.08715},",
-        "  year={2026}",
-        "}",
+  "@article{qiao2025deep,",
+"  title={Deep graph anomaly detection: A survey and new perspectives},",
+"  author={Qiao, Hezhe and Tong, Hanghang and An, Bo and King, Irwin and Aggarwal, Charu and Pang, Guansong},",
+"  journal={IEEE Transactions on Knowledge and Data Engineering},",
+"  year={2025},",
+"  publisher={IEEE}",
+"}",
       ],
     }
   },
