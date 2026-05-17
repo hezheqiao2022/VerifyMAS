@@ -93,7 +93,7 @@ const buttons = [
   {
     disabled: false,
     name: "Paper",
-    link: "https://arxiv.org/abs/2605.08715",
+    link: "",
     iconImg: "resources/arxiv_logo.svg",
   },
   {
@@ -105,7 +105,7 @@ const buttons = [
   {
     disabled: false,
     name: "Dataset",
-    link: "https://huggingface.co/datasets/ZBox008003/AFTraj",
+    link: "",
     iconImg: "resources/huggingface_logo.png",
   },
   {
