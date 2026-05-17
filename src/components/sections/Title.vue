@@ -43,7 +43,7 @@ const addresses = [
   {
     address_flag: "1",
     name: "Singapore Management University",
-    icon: "resources/ru_logo.png",
+    icon: "resources/smu_logo.png",
     homepage: ""
   },
 
