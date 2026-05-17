@@ -32,19 +32,19 @@ const authors = [
       {
     name: "Hanghang Tong",
     icon: "",
-    homepage: "",
+    homepage: "http://tonghanghang.org/",
     address_flag: "2"
   },
           {
-    name: "En-PENG Lim",
+    name: "Ee-Peng Lim",
     icon: "",
-    homepage: "",
+    homepage: "https://faculty.smu.edu.sg/profile/lim-ee-peng-616",
     address_flag: "2"
   },
           {
     name: "Bing Liu",
     icon: "",
-    homepage: "",
+    homepage: "https://www.cs.uic.edu/~liub/",
     address_flag: "2"
   },
   {
