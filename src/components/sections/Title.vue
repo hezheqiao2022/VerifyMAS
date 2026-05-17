@@ -32,7 +32,19 @@ const authors = [
       {
     name: "Hanghang Tong",
     icon: "",
-    homepage: "https://hezheqiao2022.github.io/",
+    homepage: "",
+    address_flag: "2"
+  },
+          {
+    name: "En-PENG Lim",
+    icon: "",
+    homepage: "",
+    address_flag: "2"
+  },
+          {
+    name: "Bing Liu",
+    icon: "",
+    homepage: "",
     address_flag: "2"
   },
   {
@@ -87,7 +99,7 @@ const buttons = [
   {
     disabled: false,
     name: "Code",
-    link: "https://github.com/ZBox1005/AgentForesight",
+    link: "",
     iconImg: "resources/github_logo.svg",
   },
   {
