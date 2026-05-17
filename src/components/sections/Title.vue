@@ -46,6 +46,18 @@ const addresses = [
     icon: "resources/smu_logo.png",
     homepage: ""
   },
+      {
+    address_flag: "2",
+    name: "University of Illinois Urbana-Champaign",
+    icon: "resources/uiuc_logo.png",
+    homepage: ""
+  },
+      {
+    address_flag: "3",
+    name: "University of Illinois Chicago",
+    icon: "resources/uic_logo.png",
+    homepage: ""
+  },
 
 ]
 
