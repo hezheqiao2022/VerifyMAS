@@ -4,7 +4,7 @@ import FigureSection from './FigureSection.vue'
 
 <template>
   <FigureSection
-    title="Ablation & Analysis"
+    title="Fine-grained Failure Analysis"
     src="resources/ablation_analysis.png"
     alt="Stage-wise ablation and deployment trade-off"
   >
