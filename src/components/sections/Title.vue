@@ -26,7 +26,7 @@ const authors = [
   {
     name: "Hezhe Qiao",
     icon: "",
-    homepage: "https://hezheqiao.2022.github.io/",
+    homepage: "https://hezheqiao2022.github.io/",
     address_flag: "1,*"
   },
 
