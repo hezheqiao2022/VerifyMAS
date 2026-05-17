@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/test_page',
+  base:'/VerifyMAS',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
