@@ -39,13 +39,13 @@ const authors = [
     name: "Ee-Peng Lim",
     icon: "",
     homepage: "https://faculty.smu.edu.sg/profile/lim-ee-peng-616",
-    address_flag: "2"
+    address_flag: "1"
   },
           {
     name: "Bing Liu",
     icon: "",
     homepage: "https://www.cs.uic.edu/~liub/",
-    address_flag: "2"
+    address_flag: "3"
   },
   {
     name: "Guansong Pang",
