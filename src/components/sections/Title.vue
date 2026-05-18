@@ -80,7 +80,7 @@ const addresses = [
 
 // 共一和通讯提示
 const con_and_corresponding_author =
-  "†: Corresponding Author."
+  ""
 
 // 最新消息
 const news = ""
