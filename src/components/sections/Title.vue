@@ -93,13 +93,13 @@ const buttons = [
   {
     disabled: false,
     name: "Paper",
-    link: "",
+    link: "https://arxiv.org/abs/2605.17467",
     iconImg: "resources/arxiv_logo.svg",
   },
   {
     disabled: false,
     name: "Code",
-    link: "",
+    link: "https://github.com/mala-lab/VerifyMAS",
     iconImg: "resources/github_logo.svg",
   },
   {
