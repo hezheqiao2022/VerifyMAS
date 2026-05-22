@@ -3,12 +3,11 @@ export default {
   data() {
     return {
       bibtex: [
-  "@article{qiao2025deep,",
-"  title={Deep graph anomaly detection: A survey and new perspectives},",
-"  author={Qiao, Hezhe and Tong, Hanghang and An, Bo and King, Irwin and Aggarwal, Charu and Pang, Guansong},",
-"  journal={IEEE Transactions on Knowledge and Data Engineering},",
-"  year={2025},",
-"  publisher={IEEE}",
+"@article{qiao2026verifymas,",
+"  title={VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems},",
+"  author={Qiao, Hezhe and Tong, Hanghang and Lim, Ee-Peng and Liu, Bing and Pang, Guansong},",
+"  journal={arXiv preprint arXiv:2605.17467},",
+"  year={2026}",
 "}",
       ],
     }
