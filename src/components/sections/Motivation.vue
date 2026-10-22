@@ -5,7 +5,7 @@ import FigureSection from './FigureSection.vue'
 <template>
   <FigureSection
     title="Why Hypothesis Verification?"
-    src="resources/example.pdf"
+    src="resources/example.png"
     alt=""
   >
     <template #caption>

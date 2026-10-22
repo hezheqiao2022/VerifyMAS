@@ -5,7 +5,7 @@ import FigureSection from './FigureSection.vue'
 <template>
   <FigureSection
     title="Case Study"
-    src="resources/case.pdf"
+    src="resources/case.png"
     alt="Case study comparing predictions from DeepSeek-V4-Pro, Gemini-3-Flash, and AgentForesight-7B"
   >
     <template #caption>

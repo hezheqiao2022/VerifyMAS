@@ -5,7 +5,7 @@ import FigureSection from './FigureSection.vue'
 <template>
   <FigureSection
     title="Method"
-    src="resources/framework.pdf"
+    src="resources/framework.png"
     alt="AgentForesight pipeline: AFTraj-2K construction and coarse-to-fine training"
   >
     <template #caption>
