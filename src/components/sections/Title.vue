@@ -106,7 +106,13 @@ const buttons = [
   {
     disabled: false,
     name: 'Dataset',
-    link: '',
+    link: 'https://huggingface.co/datasets/hezheqiao/VerifyMAS-SFT',
+    iconImg: 'resources/huggingface_logo.png',
+  },
+      {
+    disabled: false,
+    name: 'Model',
+    link: 'https://huggingface.co/hezheqiao/VerifyMAS-7B',
     iconImg: 'resources/huggingface_logo.png',
   },
   {
